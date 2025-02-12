@@ -1,0 +1,16 @@
+# расположен в корне: police-bot-prod/render.yaml
+
+services:
+  - type: web
+    name: police-bot
+    runtime: docker
+    env: python
+    region: frankfurt  # Рекомендуется ближайший к RU
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: REDIS_URL
+        value: redis://redis:6379/0
+    plan: free  # До 750 часов/мес бесплатно
+    dockerfilePath: Dockerfile
+    healthCheckPath: /health

@@ -1,0 +1,12 @@
+# расположен в корне: police-bot-prod/.dockerignore
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+*.egg-info
+*.log
+.DS_Store
+.git

@@ -1,0 +1,3 @@
+# расположен в корне: police-bot-prod/runtime.txt
+
+python-3.10.12
